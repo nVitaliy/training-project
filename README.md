@@ -32,3 +32,9 @@ network:
         addresses: [192.168.1.1,8.8.8.8] 
 ```
 - To actually make these changes take effect you can run the following command: `sudo netplan apply`
+
+
+**NetworkManager**
+- `sudo systemctl stop NetworkManager`
+- `sudo systemctl disable NetworkManager`
+- `sudo systemctl restart networking`
