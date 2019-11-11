@@ -1,7 +1,7 @@
-## Ubuntu
+## **Ubuntu**
 
 
-#### 1. Network
+#### **1. Network**
 
 **Setting hostname**
  - `hostname` (to show hostname)
