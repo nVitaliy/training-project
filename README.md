@@ -9,6 +9,7 @@
    - the hostnamectl command doesn't update `/etc/hosts` for you, so you'll need to edit that file yourself.
     
 **Managing network interface**
+- use ***Netplan***
 - `ip addr show`;
 - can bring a device down, and then back up again:
   - `sudo ip link set enp0s3 down`
@@ -33,8 +34,22 @@ network:
 ```
 - To actually make these changes take effect you can run the following command: `sudo netplan apply`
 
-
 **NetworkManager**
 - `sudo systemctl stop NetworkManager`
 - `sudo systemctl disable NetworkManager`
 - `sudo systemctl restart networking`
+
+**OpenSSH**
+- type `which sshd`, if you have OpenSSH Server installed, your output should read */usr/sbin/sshd*
+- `sudo apt install openssh-server`
+- type `which ssh`, if you have OpenSSH Client installed, your output should read */usr/sbin/sshd*
+- `sudo apt install openssh-client `
+- verify is *openssh-server* is running `systemctl status ssh`
+- if *openssh-server* is not running `sudo systemctl start ssh`
+- if *openssh-server* doesn't start up automatically when the server boots `sudo systemctl enable ssh`
+- if *netstat* not installed `sudo apt-get install net-tools`
+- list listening ports `sudo netstat -tulpn |grep ssh`
+- to connect to a server using SSH `ssh 192.168.1.132`
+- to connect to a server using SSH with different username `ssh username@10.10.96.10`
+- to connect to a server using SSH with different username and different port `ssh -p 2021 username@10.10.96.10`
+- TODO: add ssh key manager
