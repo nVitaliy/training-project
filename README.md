@@ -58,3 +58,16 @@ network:
 - Ubuntu features a set of updates known as the hardware enablement (HWE) stack
   - DESKTOP `sudo apt-get install --install-recommends linux-generic-hwe-18.04 xserver-xorg-hwe-18.04`
   - SERVER `sudo apt-get install --install-recommends linux-generic-hwe-18`
+  
+**Installing and removing software**
+- APT (Advanced Package Tool) 
+  - `sudo apt install <package>`
+  - `sudo apt update <package>`
+  - `sudo apt remove <package>`
+  - `apt search <search term>`
+    - old version apt-get
+- SNAP 
+  - `sudo snap install <package>`
+  - `sudo snap refresh <package>`
+  - `sudo snap remove <package>`
+  - `snap find <search term>`
