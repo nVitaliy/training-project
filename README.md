@@ -53,3 +53,8 @@ network:
 - to connect to a server using SSH with different username `ssh username@10.10.96.10`
 - to connect to a server using SSH with different username and different port `ssh -p 2021 username@10.10.96.10`
 - TODO: add ssh key manager
+
+**Hardware updates**
+- Ubuntu features a set of updates known as the hardware enablement (HWE) stack
+  - DESKTOP `sudo apt-get install --install-recommends linux-generic-hwe-18.04 xserver-xorg-hwe-18.04`
+  - SERVER `sudo apt-get install --install-recommends linux-generic-hwe-18`
