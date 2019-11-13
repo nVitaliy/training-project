@@ -71,3 +71,6 @@ network:
   - `sudo snap refresh <package>`
   - `sudo snap remove <package>`
   - `snap find <search term>`
+  
+**Showing running processes**
+- `ps`, `ps a`, `ps au`, `ps aux`, `ps aux | grep nginx`, `ps u -C nginx `, `ps aux --sort=-pcpu`, `ps aux --sort=-pcpu | head -n 5`, `ps aux --sort=-pmem | head -n 5`
