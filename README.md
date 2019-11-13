@@ -74,3 +74,6 @@ network:
   
 **Showing running processes**
 - `ps`, `ps a`, `ps au`, `ps aux`, `ps aux | grep nginx`, `ps u -C nginx `, `ps aux --sort=-pcpu`, `ps aux --sort=-pcpu | head -n 5`, `ps aux --sort=-pmem | head -n 5`
+
+**Managing system processes**
+- `systemctl |grep ssh`, `sudo systemctl status ssh`, `sudo systemctl stop ssh`, `sudo systemctl start ssh`, `sudo systemctl enable ssh`, `sudo systemctl disable ssh`
